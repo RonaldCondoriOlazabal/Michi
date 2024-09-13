@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #00FFFF;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.upeu.calcfx.control.TictacControl">
+   <children>
+      <Pane layoutX="1.0" layoutY="52.0" prefHeight="163.0" prefWidth="247.0">
+         <children>
+            <GridPane layoutX="-1.0" layoutY="1.0" prefHeight="163.0" prefWidth="247.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="btn00" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#accionButon" prefHeight="74.0" prefWidth="99.0" />
+                  <Button fx:id="btn01" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#accionButon" prefHeight="161.0" prefWidth="99.0" GridPane.columnIndex="1" />
+                  <Button fx:id="btn02" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#accionButon" prefHeight="107.0" prefWidth="100.0" GridPane.columnIndex="2" />
+                  <Button fx:id="btn10" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#accionButon" prefHeight="101.0" prefWidth="99.0" GridPane.rowIndex="1" />
+                  <Button fx:id="btn11" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#accionButon" prefHeight="90.0" prefWidth="99.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Button fx:id="btn12" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#accionButon" prefHeight="88.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Button fx:id="btn20" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#accionButon" prefHeight="95.0" prefWidth="82.0" GridPane.rowIndex="2" />
+                  <Button fx:id="btn21" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#accionButon" prefHeight="99.0" prefWidth="99.0" textAlignment="RIGHT" textFill="#3e1a40" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Button fx:id="btn22" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#accionButon" prefHeight="68.0" prefWidth="84.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+         </children>
+      </Pane>
+      <Pane layoutX="254.0" layoutY="52.0" prefHeight="142.0" prefWidth="346.0" style="-fx-background-color: #FFFF00;">
+         <children>
+            <Button layoutX="77.0" layoutY="90.0" mnemonicParsing="false" onAction="#imprimir" prefHeight="38.0" prefWidth="51.0" style="-fx-background-color: #00FF00;" text="Iniciar" />
+            <Button layoutX="172.0" layoutY="90.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="51.0" style="-fx-background-color: #00FFFF;" text="Anular" />
+            <TextField layoutX="126.0" layoutY="14.0" prefHeight="25.0" prefWidth="142.0" />
+            <TextField layoutX="126.0" layoutY="46.0" prefHeight="25.0" prefWidth="142.0" />
+            <Label layoutX="25.0" layoutY="14.0" prefHeight="25.0" prefWidth="77.0" text="Jugador 1" textFill="#e10a27e8">
+               <font>
+                  <Font name="Microsoft PhagsPa Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="46.0" prefHeight="25.0" prefWidth="77.0" text="Jugador 2" textFill="#e10a27e8">
+               <font>
+                  <Font name="Microsoft PhagsPa Bold" size="14.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Pane layoutX="254.0" layoutY="201.0" prefHeight="198.0" prefWidth="346.0">
+         <children>
+            <TableView layoutY="4.0" prefHeight="198.0" prefWidth="353.0" style="-fx-background-color: #F08080;">
+              <columns>
+                <TableColumn prefWidth="75.0" text="C1" />
+                <TableColumn prefWidth="75.0" text="C2" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+      <ParallelCamera />
+      <AmbientLight lightOn="true">
+         <color>
+            <Color green="0.18333333730697632" blue="1.0" opacity="0.9740259647369385" />
+         </color>
+      </AmbientLight>
+      <Pane layoutY="222.0" prefHeight="177.0" prefWidth="247.0" style="-fx-background-color: #00FF00;">
+         <children>
+            <Label layoutX="35.0" layoutY="56.0" prefHeight="25.0" prefWidth="178.0" text="Turno:" textFill="#1e1d1de8">
+               <font>
+                  <Font name="Microsoft PhagsPa Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="89.0" prefHeight="25.0" prefWidth="178.0" text="Jugador 1:" textFill="#1e1d1de8">
+               <font>
+                  <Font name="Microsoft PhagsPa Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="114.0" prefHeight="25.0" prefWidth="178.0" text="Jugador 2:" textFill="#1e1d1de8">
+               <font>
+                  <Font name="Microsoft PhagsPa Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="95.0" layoutY="60.0" />
+            <Label layoutX="105.0" layoutY="93.0" text="0" />
+            <Label layoutX="105.0" layoutY="118.0" text="0" />
+         </children></Pane>
+      <Pane layoutY="-1.0" prefHeight="54.0" prefWidth="600.0" style="-fx-background-color: #FFA07A #FF00FF;">
+         <children>
+            <Label layoutX="14.0" layoutY="2.0" prefHeight="25.0" prefWidth="178.0" text="EVALUACION UNIDAD 2" textFill="#1e1d1de8">
+               <font>
+                  <Font name="Microsoft PhagsPa Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="28.0" prefHeight="25.0" prefWidth="178.0" text="NOMBRE:" textFill="#1e1d1de8">
+               <font>
+                  <Font name="Microsoft PhagsPa Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="84.0" layoutY="32.0" text="Ronald Condori Olazabal" />
+         </children></Pane>
+   </children>
+</AnchorPane>
